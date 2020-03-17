@@ -39,11 +39,20 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.UpPanel = new System.Windows.Forms.Panel();
             this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.Ico = new System.Windows.Forms.PictureBox();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.HelpButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.TrophyButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.CommandButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.NewsButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.PersonButton = new Bunifu.Framework.UI.BunifuImageButton();
+            this.AddingButton = new Bunifu.Framework.UI.BunifuImageButton();
             this.CommandPanel = new System.Windows.Forms.Panel();
             this.howlingWolfDataSet = new HowlingWolf.HowlingWolfDataSet();
             this.AddingPanel = new System.Windows.Forms.Panel();
@@ -54,19 +63,10 @@
             this.bunifuButton3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.bunifuButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.HelpButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.TrophyButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.CommandButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.NewsButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
-            this.PersonButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.AddingButton = new Bunifu.Framework.UI.BunifuImageButton();
-            this.Ico = new System.Windows.Forms.PictureBox();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.PlayerPanel = new System.Windows.Forms.Panel();
             this.UpPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ico)).BeginInit();
             this.PanelMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.howlingWolfDataSet)).BeginInit();
-            this.AddingPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HelpButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrophyButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommandButton)).BeginInit();
@@ -74,7 +74,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonButton)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddingButton)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ico)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.howlingWolfDataSet)).BeginInit();
+            this.AddingPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -100,6 +101,45 @@
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
             this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
+            // Ico
+            // 
+            this.Ico.Image = global::HowlingWolf.Properties.Resources.wolf;
+            resources.ApplyResources(this.Ico, "Ico");
+            this.Ico.Name = "Ico";
+            this.Ico.TabStop = false;
+            // 
+            // bunifuFlatButton1
+            // 
+            this.bunifuFlatButton1.Active = false;
+            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Maroon;
+            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
+            this.bunifuFlatButton1.BorderRadius = 0;
+            this.bunifuFlatButton1.ButtonText = "";
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton1.Iconimage = global::HowlingWolf.Properties.Resources.CloseIcon;
+            this.bunifuFlatButton1.Iconimage_right = null;
+            this.bunifuFlatButton1.Iconimage_right_Selected = null;
+            this.bunifuFlatButton1.Iconimage_Selected = null;
+            this.bunifuFlatButton1.IconMarginLeft = 0;
+            this.bunifuFlatButton1.IconMarginRight = 0;
+            this.bunifuFlatButton1.IconRightVisible = true;
+            this.bunifuFlatButton1.IconRightZoom = 0D;
+            this.bunifuFlatButton1.IconVisible = true;
+            this.bunifuFlatButton1.IconZoom = 90D;
+            this.bunifuFlatButton1.IsTab = false;
+            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
+            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Red;
+            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.selected = false;
+            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // bunifuDragControl1
             // 
@@ -139,6 +179,80 @@
             this.PanelMenu.Controls.Add(this.AddingButton);
             resources.ApplyResources(this.PanelMenu, "PanelMenu");
             this.PanelMenu.Name = "PanelMenu";
+            // 
+            // HelpButton
+            // 
+            this.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.HelpButton.Image = global::HowlingWolf.ResourcePicture.help;
+            this.HelpButton.ImageActive = global::HowlingWolf.ResourcePicture.help_active;
+            resources.ApplyResources(this.HelpButton, "HelpButton");
+            this.HelpButton.Name = "HelpButton";
+            this.HelpButton.TabStop = false;
+            this.HelpButton.Zoom = 0;
+            // 
+            // TrophyButton
+            // 
+            this.TrophyButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.TrophyButton.Image = global::HowlingWolf.ResourcePicture.trophy;
+            this.TrophyButton.ImageActive = global::HowlingWolf.ResourcePicture.trophy_active;
+            resources.ApplyResources(this.TrophyButton, "TrophyButton");
+            this.TrophyButton.Name = "TrophyButton";
+            this.TrophyButton.TabStop = false;
+            this.TrophyButton.Zoom = 0;
+            // 
+            // CommandButton
+            // 
+            this.CommandButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CommandButton.Image = global::HowlingWolf.ResourcePicture.Team;
+            this.CommandButton.ImageActive = global::HowlingWolf.ResourcePicture.Team_active;
+            resources.ApplyResources(this.CommandButton, "CommandButton");
+            this.CommandButton.Name = "CommandButton";
+            this.CommandButton.TabStop = false;
+            this.CommandButton.Zoom = 0;
+            this.CommandButton.Click += new System.EventHandler(this.bunifuImageButton4_Click);
+            // 
+            // NewsButton
+            // 
+            this.NewsButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.NewsButton.Image = global::HowlingWolf.ResourcePicture.news;
+            this.NewsButton.ImageActive = global::HowlingWolf.ResourcePicture.news_active;
+            resources.ApplyResources(this.NewsButton, "NewsButton");
+            this.NewsButton.Name = "NewsButton";
+            this.NewsButton.TabStop = false;
+            this.NewsButton.Zoom = 0;
+            this.NewsButton.Click += new System.EventHandler(this.PersonButton_Click);
+            // 
+            // bunifuImageButton2
+            // 
+            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton2.Image = global::HowlingWolf.ResourcePicture.Menu;
+            this.bunifuImageButton2.ImageActive = global::HowlingWolf.ResourcePicture.Menu_active;
+            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
+            this.bunifuImageButton2.Name = "bunifuImageButton2";
+            this.bunifuImageButton2.TabStop = false;
+            this.bunifuImageButton2.Zoom = 0;
+            // 
+            // PersonButton
+            // 
+            this.PersonButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PersonButton.Image = global::HowlingWolf.ResourcePicture.person;
+            this.PersonButton.ImageActive = global::HowlingWolf.ResourcePicture.person_active;
+            resources.ApplyResources(this.PersonButton, "PersonButton");
+            this.PersonButton.Name = "PersonButton";
+            this.PersonButton.TabStop = false;
+            this.PersonButton.Zoom = 0;
+            this.PersonButton.Click += new System.EventHandler(this.PersonButton_Click);
+            // 
+            // AddingButton
+            // 
+            this.AddingButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.AddingButton.Image = global::HowlingWolf.ResourcePicture.adding;
+            this.AddingButton.ImageActive = global::HowlingWolf.ResourcePicture.adding_active;
+            resources.ApplyResources(this.AddingButton, "AddingButton");
+            this.AddingButton.Name = "AddingButton";
+            this.AddingButton.TabStop = false;
+            this.AddingButton.Zoom = 0;
+            this.AddingButton.Click += new System.EventHandler(this.AddingButton_Click);
             // 
             // CommandPanel
             // 
@@ -351,118 +465,11 @@
             this.bunifuButton1.onHoverState = stateProperties6;
             this.bunifuButton1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // HelpButton
+            // PlayerPanel
             // 
-            this.HelpButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.HelpButton.Image = global::HowlingWolf.ResourcePicture.help;
-            this.HelpButton.ImageActive = global::HowlingWolf.ResourcePicture.help_active;
-            resources.ApplyResources(this.HelpButton, "HelpButton");
-            this.HelpButton.Name = "HelpButton";
-            this.HelpButton.TabStop = false;
-            this.HelpButton.Zoom = 0;
-            // 
-            // TrophyButton
-            // 
-            this.TrophyButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.TrophyButton.Image = global::HowlingWolf.ResourcePicture.trophy;
-            this.TrophyButton.ImageActive = global::HowlingWolf.ResourcePicture.trophy_active;
-            resources.ApplyResources(this.TrophyButton, "TrophyButton");
-            this.TrophyButton.Name = "TrophyButton";
-            this.TrophyButton.TabStop = false;
-            this.TrophyButton.Zoom = 0;
-            // 
-            // CommandButton
-            // 
-            this.CommandButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CommandButton.Image = global::HowlingWolf.ResourcePicture.Team;
-            this.CommandButton.ImageActive = global::HowlingWolf.ResourcePicture.Team_active;
-            resources.ApplyResources(this.CommandButton, "CommandButton");
-            this.CommandButton.Name = "CommandButton";
-            this.CommandButton.TabStop = false;
-            this.CommandButton.Zoom = 0;
-            this.CommandButton.Click += new System.EventHandler(this.bunifuImageButton4_Click);
-            // 
-            // NewsButton
-            // 
-            this.NewsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.NewsButton.Image = global::HowlingWolf.ResourcePicture.news;
-            this.NewsButton.ImageActive = global::HowlingWolf.ResourcePicture.news_active;
-            resources.ApplyResources(this.NewsButton, "NewsButton");
-            this.NewsButton.Name = "NewsButton";
-            this.NewsButton.TabStop = false;
-            this.NewsButton.Zoom = 0;
-            this.NewsButton.Click += new System.EventHandler(this.NewsButton_Click_1);
-            // 
-            // bunifuImageButton2
-            // 
-            this.bunifuImageButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuImageButton2.Image = global::HowlingWolf.ResourcePicture.Menu;
-            this.bunifuImageButton2.ImageActive = global::HowlingWolf.ResourcePicture.Menu_active;
-            resources.ApplyResources(this.bunifuImageButton2, "bunifuImageButton2");
-            this.bunifuImageButton2.Name = "bunifuImageButton2";
-            this.bunifuImageButton2.TabStop = false;
-            this.bunifuImageButton2.Zoom = 0;
-            // 
-            // PersonButton
-            // 
-            this.PersonButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PersonButton.Image = global::HowlingWolf.ResourcePicture.person;
-            this.PersonButton.ImageActive = global::HowlingWolf.ResourcePicture.person_active;
-            resources.ApplyResources(this.PersonButton, "PersonButton");
-            this.PersonButton.Name = "PersonButton";
-            this.PersonButton.TabStop = false;
-            this.PersonButton.Zoom = 0;
-            this.PersonButton.Click += new System.EventHandler(this.NewsButton_Click);
-            // 
-            // AddingButton
-            // 
-            this.AddingButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.AddingButton.Image = global::HowlingWolf.ResourcePicture.adding;
-            this.AddingButton.ImageActive = global::HowlingWolf.ResourcePicture.adding_active;
-            resources.ApplyResources(this.AddingButton, "AddingButton");
-            this.AddingButton.Name = "AddingButton";
-            this.AddingButton.TabStop = false;
-            this.AddingButton.Zoom = 0;
-            this.AddingButton.Click += new System.EventHandler(this.bunifuImageButton1_Click_1);
-            // 
-            // Ico
-            // 
-            this.Ico.Image = global::HowlingWolf.Properties.Resources.wolf;
-            resources.ApplyResources(this.Ico, "Ico");
-            this.Ico.Name = "Ico";
-            this.Ico.TabStop = false;
-            // 
-            // bunifuFlatButton1
-            // 
-            this.bunifuFlatButton1.Active = false;
-            this.bunifuFlatButton1.Activecolor = System.Drawing.Color.Maroon;
-            this.bunifuFlatButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            resources.ApplyResources(this.bunifuFlatButton1, "bunifuFlatButton1");
-            this.bunifuFlatButton1.BorderRadius = 0;
-            this.bunifuFlatButton1.ButtonText = "";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton1.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton1.Iconimage = global::HowlingWolf.Properties.Resources.CloseIcon;
-            this.bunifuFlatButton1.Iconimage_right = null;
-            this.bunifuFlatButton1.Iconimage_right_Selected = null;
-            this.bunifuFlatButton1.Iconimage_Selected = null;
-            this.bunifuFlatButton1.IconMarginLeft = 0;
-            this.bunifuFlatButton1.IconMarginRight = 0;
-            this.bunifuFlatButton1.IconRightVisible = true;
-            this.bunifuFlatButton1.IconRightZoom = 0D;
-            this.bunifuFlatButton1.IconVisible = true;
-            this.bunifuFlatButton1.IconZoom = 90D;
-            this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Name = "bunifuFlatButton1";
-            this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.Red;
-            this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
+            this.PlayerPanel.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            resources.ApplyResources(this.PlayerPanel, "PlayerPanel");
+            this.PlayerPanel.Name = "PlayerPanel";
             // 
             // MainMenu
             // 
@@ -470,6 +477,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             resources.ApplyResources(this, "$this");
             this.ControlBox = false;
+            this.Controls.Add(this.PlayerPanel);
             this.Controls.Add(this.AddingPanel);
             this.Controls.Add(this.CommandPanel);
             this.Controls.Add(this.PanelMenu);
@@ -480,11 +488,9 @@
             this.Load += new System.EventHandler(this.MainMenu_Load_1);
             this.UpPanel.ResumeLayout(false);
             this.UpPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ico)).EndInit();
             this.PanelMenu.ResumeLayout(false);
             this.PanelMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.howlingWolfDataSet)).EndInit();
-            this.AddingPanel.ResumeLayout(false);
-            this.AddingPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.HelpButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TrophyButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CommandButton)).EndInit();
@@ -492,7 +498,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PersonButton)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AddingButton)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Ico)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.howlingWolfDataSet)).EndInit();
+            this.AddingPanel.ResumeLayout(false);
+            this.AddingPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -526,6 +534,7 @@
         private Bunifu.Framework.UI.BunifuImageButton TrophyButton;
         private Bunifu.Framework.UI.BunifuImageButton CommandButton;
         private Bunifu.Framework.UI.BunifuImageButton NewsButton;
+        private System.Windows.Forms.Panel PlayerPanel;
     }
 }
 

@@ -127,11 +127,32 @@
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>800, 450</value>
   </data>
+  <data name="PlayerPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>269, 48</value>
+  </data>
+  <data name="PlayerPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 100</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="PlayerPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;PlayerPanel.Name" xml:space="preserve">
+    <value>PlayerPanel</value>
+  </data>
+  <data name="&gt;&gt;PlayerPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlayerPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;PlayerPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="AddingPanel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bunifuCustomLabel1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -406,10 +427,10 @@
     <value>6</value>
   </data>
   <data name="AddingPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>48, 71</value>
+    <value>159, 48</value>
   </data>
   <data name="AddingPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>757, 419</value>
+    <value>104, 99</value>
   </data>
   <data name="AddingPanel.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -424,7 +445,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AddingPanel.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="CommandPanel.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -433,10 +454,10 @@
     <value>Stretch</value>
   </data>
   <data name="CommandPanel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>52, 43</value>
+    <value>49, 48</value>
   </data>
   <data name="CommandPanel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>305, 246</value>
+    <value>104, 99</value>
   </data>
   <data name="CommandPanel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -454,7 +475,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CommandPanel.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="HelpButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -667,7 +688,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;PanelMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 1.2px; font-family: 'Sitka Small'; font-size: 12,14pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: White; text-align: left; }</value>
@@ -775,7 +796,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;UpPanel.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

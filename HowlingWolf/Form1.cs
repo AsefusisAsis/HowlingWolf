@@ -14,6 +14,9 @@ namespace HowlingWolf
 {
     public partial class MainMenu : Form
     {
+        int count = 0;
+
+        private Static @static = new Static();
 
         public MainMenu()
         {
@@ -23,36 +26,46 @@ namespace HowlingWolf
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
+        }//Выход
 
-        private void bunifuImageButton1_Click_1(object sender, EventArgs e)
+        private void AddingButton_Click(object sender, EventArgs e)
         {
             ShowAdding();
+        }//Кнопка добавлений
 
-        }
-
-        private void NewsButton_Click(object sender, EventArgs e)
+        private void PersonButton_Click(object sender, EventArgs e)
         {
-           
-        }
-        
-        private void ShowCommand()
+            ShowPlayer();
+        }//Кнопка новостей
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+            ShowCommand();
+        }//Кнопка команд
+
+        private void ShowPlayer()
         {
             AddingPanel.Hide();
+            CommandPanel.Hide();
+            PlayerPanel.Show();
+        }//Функция для отображения Игроков
+
+        private void ShowCommand()
+        {
+            PlayerPanel.Hide();
+            AddingPanel.Hide();
             CommandPanel.Show();
-           
-        }
-        
+
+        }//Функция для отображения Команд
+
         private void ShowAdding()
         {
+            PlayerPanel.Hide();
             CommandPanel.Hide();
             AddingPanel.Show();
-        }
+        }//Функция для отображения формы Добавления
 
-        int count = 0;
-      private   Static @static = new Static();
-
-        private void AddingItem(int count)
+        private void AddingItemCommand(int count)
         {
             
 
@@ -148,48 +161,37 @@ namespace HowlingWolf
                 
             }
             CommandPanel.Height += 30;
+        }//Динамическое отображение формы комманд
+
+        private void AddingItemPlayers()//Динамическое отображение формы игроков
+        {
+
         }
 
         private void MainMenu_Load_1(object sender, EventArgs e)/*Компановка стилей панелей*/
         {
-
-
-            AddingItem(0);
-
+            AddingItemCommand(0);
             ShowCommand();
-
-
-
             CommandPanel.BackgroundImage = ResourcePicture.Back2;
-            
             CommandPanel.Height = this.Height -UpPanel.Height;
             CommandPanel.Width = this.Width - PanelMenu.Width;
             CommandPanel.Top = UpPanel.Height;
             CommandPanel.Left = PanelMenu.Width;
-            
+            CommandPanel.VerticalScroll.Visible = true;
 
             AddingPanel.BackgroundImage = ResourcePicture._123;
-
             AddingPanel.Top = CommandPanel.Top;
             AddingPanel.Left = CommandPanel.Left;
             AddingPanel.Width = CommandPanel.Width;
             AddingPanel.Height = CommandPanel.Height;
 
-          
-
-            CommandPanel.VerticalScroll.Visible = true;
-
+            PlayerPanel.Top = CommandPanel.Top;
+            PlayerPanel.Left = CommandPanel.Left;
+            PlayerPanel.Width = CommandPanel.Width;
+            PlayerPanel.Height = CommandPanel.Height;
         }
 
-        private void bunifuImageButton4_Click(object sender, EventArgs e)
-        {
-            ShowCommand();
-        }
 
-        private void NewsButton_Click_1(object sender, EventArgs e)
-        {
-          
-        }
     }
 
 
